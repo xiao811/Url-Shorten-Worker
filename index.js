@@ -150,7 +150,7 @@ async function handleRequest(request) {
 
   if (location) {
     if (config.no_ref=="on"){
-      let no_ref= await fetch("https://xytom.github.io/Url-Shorten-Worker/no-ref.html")
+      let no_ref= await fetch("https://cdn.jsdelivr.net/gh/xiao811/Url-Shorten-Worker@gh-pages/index.html")
       no_ref=await no_ref.text()
       no_ref=no_ref.replace(/{Replace}/gm, location)
       return new Response(no_ref, {
